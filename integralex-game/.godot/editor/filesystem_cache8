@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1765284053
+::res://images/::1764160312
+mango1.png::CompressedTexture2D::2503849747744585616::1721999110::1764160312::1::::<><>::
+::res://scripts/::1764686029
+basic_attack.gd::GDScript::-1::1764686029::0::1::::<>Area2D<>::
+hero.gd::GDScript::-1::1764679381::0::1::::<>Area2D<>::
+::res://sprites/::1764153536
+icon.svg::CompressedTexture2D::8529377992409916295::1764153042::1764153536::1::::<><>::
+::res://szenen/::1764686618
+basic_attack.tscn::PackedScene::5776730058761049853::1764686618::0::1::::<><>::uid://cx0dsi66vmsm8::::res://scripts/basic_attack.gd<>uid://bbw5blxvekcp1::::res://images/mango1.png
+hero.tscn::PackedScene::4670493333726609225::1764679383::0::1::::<><>::uid://gsn423o38k6y::::res://scripts/hero.gd<>uid://dtrxuyo71xgp0::::res://sprites/icon.svg

@@ -1,0 +1,4 @@
+res://szenen/hero.tscn
+res://szenen/basic_attack.tscn
+res://scripts/hero.gd
+res://scripts/basic_attack.gd
