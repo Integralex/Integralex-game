@@ -8,7 +8,7 @@ func _ready():
 	screen_size = get_viewport_rect().size
 
 func _process(delta):
-	var velocity = Vector2.ZERO # The player's movement vector.
+	var velocity = Vector2.ZERO 
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("move_left"):
@@ -17,7 +17,7 @@ func _process(delta):
 		velocity.y += 1
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
-	if Input.is_action_just_pressed("attack"): # You'll need to define "attack" in Project Settings
+	if Input.is_action_just_pressed("attack"): 
 		perform_slash_attack()
 	if velocity.length() > 0:
 		last_direction = velocity.normalized()
@@ -25,6 +25,7 @@ func _process(delta):
 		
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+	
 func perform_slash_attack():
 	var attack_instance = basic_attack.instantiate()
 	attack_instance.global_position = global_position

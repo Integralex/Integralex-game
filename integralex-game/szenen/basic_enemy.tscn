@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://bxptn1xto460a"]
+
+[ext_resource type="Texture2D" uid="uid://bbw5blxvekcp1" path="res://images/mango1.png" id="1_jaica"]
+[ext_resource type="Script" uid="uid://cllhnanh6kwnv" path="res://scripts/basic_enemy.gd" id="1_jpn2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpn2k"]
+size = Vector2(122, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4fpg"]
+atlas = ExtResource("1_jaica")
+region = Rect2(0, 0, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37t6f"]
+atlas = ExtResource("1_jaica")
+region = Rect2(31, 0, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfn8q"]
+atlas = ExtResource("1_jaica")
+region = Rect2(62, 0, 31, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ggf3"]
+atlas = ExtResource("1_jaica")
+region = Rect2(93, 0, 31, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_al36m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4fpg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37t6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfn8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ggf3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="basic_enemy" type="Area2D"]
+script = ExtResource("1_jpn2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-14, 3)
+shape = SubResource("RectangleShape2D_jpn2k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_al36m")
+frame = 3
+frame_progress = 0.971045
